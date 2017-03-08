@@ -19,7 +19,7 @@ function buildPage (dir, target, cb) {
       if (err) {
         return cb(err)
       }
-      var assets = blogDesc.assets
+      var assets = blogDesc.assets.concat([blogDesc.image])
       var failed = false
       var pending = assets.length + 1
       for (var i = 0; i < assets.length; ++i) {
@@ -91,7 +91,7 @@ function copyAsset (pattern, dir, target, cb) {
         if (failed) {
           return
         }
-        if (err) {
+        if (err && err.code !== 'EEXIST') {
           failed = true
           return cb(err)
         }

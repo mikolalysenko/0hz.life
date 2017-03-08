@@ -1,0 +1,18 @@
+{
+  "name": "sketchbook",
+  "version": "1.0.0",
+  "description": "Personal sketchbook/blog",
+  "main": "index.js",
+  "dependencies": {
+    "drmark": "^2.1.2",
+    "mkdirp": "^0.5.1",
+    "multi-regl-transform": "^1.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node scripts/build-site.js"
+  },
+  "author": "Mikola Lysenko",
+  "license": "MIT"
+}
