@@ -11,6 +11,7 @@ var STYLE_DIR = path.join(__dirname, '../style')
 
 var CSS = [
   'main.css',
+  'post.css',
   'jura.woff2'
 ]
 
@@ -50,6 +51,10 @@ posts.forEach(function (postFile, i) {
 })
 
 function buildSite () {
+  postData.sort(function (a, b) {
+    return +(new Date(a.date)) - (new Date(b.date))
+  })
+
   var siteContent = postData.map(function (post) {
     var dir = post.dir
     var desc = post.desc

@@ -1,0 +1,74 @@
+@font-face {
+  font-family: 'Jura';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Jura Regular'), local('Jura-Regular'), url(jura.woff2) format('woff2');
+}
+
+h1, h2, h3, h4, h5, nav {
+  font-family: 'Jura', sans-serif;
+}
+
+body {
+  margin: 0 auto;
+}
+
+h1 {
+  background-color: black;
+  color: white;
+  padding: 10px;
+}
+
+ul, p {
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+p {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.header {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.titleBlock {
+  margin: 0 auto;
+}
+
+.titleGraphic {
+  padding: 10pt;
+  color: #222;
+}
+
+.navHeader {
+  margin: auto;
+  padding: 5pt;
+  background-color: black;
+  font-size: 14pt;
+}
+
+.navHeader a {
+  background-color: black;
+  color: white;
+  transition-duration: 0.3s;
+  transition-property: background-color, color;
+}
+
+.navHeader a:hover {
+  background-color: white;
+  color: black;
+}
+
+.footer {
+  text-align: center;
+  padding-bottom: 40px;
+  font-family: 'Jura', sans-serif;
+}
+
+.content {
+  padding: 30px;
+  font-family: sans-serif;
+}

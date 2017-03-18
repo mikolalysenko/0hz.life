@@ -69,9 +69,26 @@ function generateBlog (dir, desc, cb) {
 <head>
 <meta charset="utf-8" />
 <title>${title}</title>
+<link href="../post.css" rel="stylesheet" type="text/css">
 </head>
 <body>
+<div class="header">
+<h1 class="titleBlock">${desc.title}</h1>
+<div class="titleGraphic"><h2>mikola's sketch book</h2></div>
+<nav class="navHeader">
+  <a href="../index.html">Posts</a>
+  <a href="https://0fps.net">Old</a>
+  <a href="https://bits.coop">BITS</a>
+  <a href="https://twitter.com/mikolalysenko">Twitter</a>
+  <a href="https://github.com/mikolalysenko">GitHub</a>
+</nav>
+</div>
+<div class="content">
 ${html}
+</div>
+<div class="footer">
+(c) 2017- <a href="mailto:mikolalysenko@gmail.com">Mikola Lysenko</a>
+</div>
 </body>
 </html>`)
     })
