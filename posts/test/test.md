@@ -1,20 +1,20 @@
-# Escaping alienation and procrastination
+If I believed in astrology, 2016 would've been the year of my [Saturn return](https://en.wikipedia.org/wiki/Saturn_return).  It was a time of great personal growth and adventure.  Without going into too much detail,
 
-If I believed in astrology, 2016 would've been the year of my saturn return.  It was a time of great personal change.  Without going into too much details,
-
-* I quit graduate school,
-* Moved to Oakland,
+* I quit graduate school and moved to Oakland,
 * Tried working at a start up, burned out and quit,
-* Separated from my girlfriend,
-* Became homeless and lived in a squat,
-* Went on a crazy cross country road trip to Coney Island,
+* Separated from my long term partner,
+* Drove across the United States to Coney Island,
+* Learned how to do a hand stand (kind of),
 * Started a [worker owned cooperative](https://bits.coop),
-* Lost 25lbs and learned how to hand stand,
 * Moved to Hawaii.
 
-I'm now living off grid on an active lava flow by the pacific ocean.  Here's the view from my deck:
+I'm now living off grid on an active lava flow by the pacific ocean:
 
-Life finally feels like it is settling down a bit.  One of my goals is to try to get back into blogging and toward this end I'm starting a new website, [0hz.life](https://0hz.life).  All the things I've previously written at 0fps will remain online and the URLS will stay intact but I'm going to post my new stuff here.  
+<img src="home.jpg" />
+
+I don't think I would've made it through this without an enormous amount of support and patience from my friends.  While it wasn't easy, life finally feels like it is settling down a bit.  
+
+I'm going to try to get back into blogging and toward this end I'm starting a new website, [0hz.life](https://0hz.life).  All the things I've previously written at 0fps will remain online and the URLS will stay intact but I'm going to post my new stuff here.  
 
 Part of the reason for starting a new site is that I want to get out of wordpress.  I would rather store my writing in plain files, not some cumbersome content management system's database.  This makes it easier to work offline (which happens frequently out here), but more importantly also paves the way for eventually hosting all my content on a decentralized data store like IPFS or dat.
 
