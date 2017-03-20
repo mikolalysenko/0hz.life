@@ -43,23 +43,25 @@ p {
   color: #222;
 }
 
-.navHeader {
+nav {
   margin: auto;
   padding: 5pt;
   background-color: black;
   font-size: 14pt;
 }
 
-.navHeader a {
+nav a {
   background-color: black;
   color: white;
   transition-duration: 0.3s;
   transition-property: background-color, color;
+  padding: 5px;
 }
 
-.navHeader a:hover {
+nav a:hover {
   background-color: white;
   color: black;
+  padding: 5px;
 }
 
 .footer {

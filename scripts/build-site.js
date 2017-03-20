@@ -35,6 +35,8 @@ posts.forEach(function (postFile, i) {
   buildPost(
     path.join(POST_DIR, postFile),
     path.join(BUILD_DIR, postFile),
+    i + 1 < posts.length ? posts[i + 1] + '/index.html' : null,
+    i - 1 >= 0 ? posts[i - 1] + '/index.html' : null,
     function (err, desc) {
       if (err) {
         return console.error(err)

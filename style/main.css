@@ -46,11 +46,13 @@ body {
   color: white;
   transition-duration: 0.3s;
   transition-property: background-color, color;
+  padding: 5px;
 }
 
 .navHeader a:hover {
   background-color: white;
   color: black;
+  padding: 5px;
 }
 
 .titleBlock {
@@ -72,11 +74,13 @@ body {
   transform: perspective(1px) translateZ(0);
   box-shadow: 0 0 1px transparent;
   transition-duration: 0.3s;
-  transition-property: transform;
+  transition-property: transform filter;
+  filter: grayscale(1) opacity(.3);
 }
 
 .postLink:hover, .postLink:focus {
   transform: scale(1.05);
+  filter: grayscale(0);
 }
 
 .postLink:active {
@@ -87,7 +91,12 @@ body {
   position: fixed;
   padding-left: 15px;
   padding-right: 15px;
-  color: white;
+  color: #111;
+  filter: none;
+}
+
+.postAbstract {
+  font-family: sans-serif;
 }
 
 .footer {

@@ -4,7 +4,7 @@ var fs = require('fs')
 var mkdirp = require('mkdirp')
 var glob = require('glob')
 
-function buildPage (dir, target, cb) {
+function buildPage (dir, target, nextLink, prevLink, cb) {
   fs.readFile(path.join(dir, 'blog.json'), { encoding: 'utf-8' }, function (err, blogDescStr) {
     if (err) {
       return cb(err)
@@ -25,7 +25,7 @@ function buildPage (dir, target, cb) {
       for (var i = 0; i < assets.length; ++i) {
         copyAsset(assets[i], dir, target, next)
       }
-      return generateBlog(dir, blogDesc, function (err, page) {
+      return generateBlog(dir, blogDesc, nextLink, prevLink, function (err, page) {
         if (err) {
           return cb(err)
         }
@@ -47,7 +47,7 @@ function buildPage (dir, target, cb) {
   })
 }
 
-function generateBlog (dir, desc, cb) {
+function generateBlog (dir, desc, nextLink, prevLink, cb) {
   var title = desc.title
   var page = desc.page
   fs.readFile(path.join(dir, page), {encoding: 'utf-8'}, function (err, data) {
@@ -76,18 +76,25 @@ function generateBlog (dir, desc, cb) {
 <h1 class="titleBlock">${desc.title}</h1>
 <div class="titleGraphic"><h2>mikola's sketch book</h2></div>
 <nav class="navHeader">
+  ${prevLink ? `<a href="${prevLink}">&lt; Prev</a>` : ''}
   <a href="../index.html">Posts</a>
   <a href="https://0fps.net">Old</a>
   <a href="https://bits.coop">BITS</a>
   <a href="https://twitter.com/mikolalysenko">Twitter</a>
   <a href="https://github.com/mikolalysenko">GitHub</a>
+  ${nextLink ? `<a href="${nextLink}">Next &gt;</a>` : ''}
 </nav>
 </div>
 <div class="content">
 ${html}
 </div>
 <div class="footer">
-(c) 2017- <a href="mailto:mikolalysenko@gmail.com">Mikola Lysenko</a>
+  <nav class="navFooter">
+    ${prevLink ? `<a href="${prevLink}">&lt; Prev</a>` : ''}
+    <a href="../index.html">Home</a>
+    ${nextLink ? `<a href="${nextLink}">Next &gt;</a>` : ''}
+  </nav>
+  <div>(c) 2017- <a href="mailto:mikolalysenko@gmail.com">Mikola Lysenko</a></div>
 </div>
 </body>
 </html>`)
