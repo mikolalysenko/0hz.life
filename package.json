@@ -1,6 +1,7 @@
 {
   "name": "sketchbook",
   "version": "1.0.0",
+  "private": true,
   "description": "Personal sketchbook/blog",
   "main": "index.js",
   "dependencies": {
@@ -11,7 +12,8 @@
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "node scripts/build-site.js"
+    "build": "node scripts/build-site.js",
+    "upload": "node scripts/publish.js"
   },
   "author": "Mikola Lysenko",
   "license": "MIT"
